@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="containerNav">
+                <div class="logo" style="color: white;">
+                    <a href="">
+                        <p>
+                            <h1 style="font-size: xx-large">&lt;Richard</h1>
+                        </p>
+                    </a>
+                    <a href="">
+                        <p>
+                            <h1 style="margin-top: -25%; padding-left: 35%; font-size: xx-large;">Lopez/></h1>
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <div class="listNav">
+                        <div><a href="#">
+                                <h2>LinkedIn</h2>
+                            </a></div>
+                        <div><a href="#">
+                                <h2>GitHub</h2>
+                            </a></div>
+                        <div><a href="#">
+                                <h2>Estudios</h2>
+                            </a></div>
+                        <div><a href="#">
+                                <h2>Experiencia</h2>
+                            </a></div>
+                        <div><a href="#">
+                                <h2>Proyectos</h2>
+                            </a></div>
+                        <button class="descargarCV">Descargar CV</button>
+                    </div>
+                </div>
+                <button class="logginButton">Login</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="sectionBanner">
+            <div class="container1">
+                <div>
+                    <h3>
+                        Hola soy
+                    </h3>
+                </div>
+                <div>
+                    <div>
+                        <h2 id="animatedText" class="textBanner">Richard Lopez</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container2">
+                <div>
+                    <p>
+                    <h6>
+                        A lo largo de mi formación en el desarrollo de software, he adquirido conocimientos en diversas
+                        tecnologías como <span style="color: #45a049;">HTML5, CSS3, TypeScript, Angular, Java,
+                            SpringBoot</span>, y más. Actualmente, estudio la Tecnicatura Superior en Desarrollo de
+                        Software en el IFTS. Mi objetivo es mejorar mis habilidades en un entorno que fomente la
+                        creatividad y el crecimiento personal y profesional.
+                    </h6>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sectionEstudios">
+            <h2 class="titleEstudios">Estudios</h2>
+            <div class="contenidoEstudios">
+                <div class="carousel-container-estudios">
+                    <div class="carousel-item-estudios">
+                        <h3>Tecnicatura Superior en Desarrollo de Software</h3>
+                        <p>IFTS Buenos Aires, Argentina</p>
+                        <p>En curso</p>
+                        <h5>Técnico Superior en Desarrollo de Software, capacitado para producir artefactos de software,
+                            comprendiendo su diseño detallado, construcción y reutilizando elementos existentes o
+                            programándolos enteramente, conocimientos en verificación unitaria, así como su depuración,
+                            optimización y mantenimiento.</h5>
+                    </div>
+                    <div class="carousel-item-estudios">
+                        <h3>Trayecto formativo Programador Java</h3>
+                        <p>SMATA Buenos Aires, Argentina</p>
+                        <p>Finalizado/ Agosto 2022 - Julio 2023</p>
+                        <h5>formación en técnicas de programación (JAVA). Base de datos (MySQL) y Programación orientada
+                            a objetos(JAVA). trayecto formativo para desempeñarse en roles técnicos como
+                            programadores en diversas áreas, incluyendo el desarrollo de aplicaciones, sitios web, y
+                            otras soluciones de software.</h5>
+                    </div>
+                    <div class="carousel-item-estudios">
+                        <h3>Desarrollador Web Full Stack</h3>
+                        <p>Cámara de la Industria Argentina del Software (CESSI)</p>
+                        <p>Finalizado Enero 2022 - abril 2023</p>
+                        <h5>Programas diseñado para proporcionar la comprensión de los lenguajes de programación y las
+                            herramientas necesarias para construir aplicaciones web completas, desde la interfaz de
+                            usuario hasta la base de datos. Tecnologías usadas : HTML5, CSS3, BootStrap, JavaScript,
+                            Java, SpringBoot, Git, Render, Firebase.</h5>
+                    </div>
+                    <!-- Añade más items según sea necesario -->
+                </div>
+                <button class="prev-estudios" onclick="moveCarousel1(-1)">&#10094;</button>
+                <button class="next-estudios" onclick="moveCarousel1(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="sectionExperiencia">
+            <h2 class="titleExperiencia">Experiencia</h2>
+            <div class="contenidoExperiencia">
+                <div class="carousel-container-experiencia">
+                    <div class="carousel-item-experiencia">
+                        <h3>Landing Page</h3>
+                        <p>Cafetería de especialidad Tintico</p>
+                        <p><a href="https://tinticocafeteria.github.io/Tintico/" target="_blank"
+                                style="color: inherit; text-decoration: none;  "> Web Tintico Cafeteria</a></p>
+                        <h5>Para el desarrollo de la página se utilizaron tecnologías como HTML5, CSS3, Bootstrap,
+                            BootStrapMade y JavaScript, y el código fuente se gestiona con Git. La página se despliega
+                            utilizando el servidor de GitHub.</h5>
+                    </div>
+                </div>
+                <button class="prev-experiencia" onclick="moveCarousel2(-1)">&#10094;</button>
+                <button class="next-experiencia" onclick="moveCarousel2(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="sectionProyectos">
+            <h2 class="titleProyectos">Proyectos</h2>
+            <div class="contenidoProyectos">
+                <div class="contImgProyectos">
+                    <img src="img/Captura de pantalla 2024-03-13 191622.png" alt="">
+                </div>
+                <div class="">
+                    <h3>Portfolio</h3>
+                    <p>Proyecto final ArgentinaPrograma</p>
+                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora repudiandae
+                        provident placeat iure velit modi id nam magnam sint quae ut libero necessitatibus quaerat
+                        ducimus, in exercitationem recusandae! Mollitia!</h5>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

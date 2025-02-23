@@ -1,0 +1,434 @@
+/* NAVBAR */
+.containerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: dimgrey;
+    border-radius: 8px;
+    /* Bordes redondeados */
+}
+
+.logo {
+    color: white;
+}
+
+.logo a {
+    text-decoration: none;
+    /* Elimina la subrayado del enlace */
+    color: inherit;
+    /* Hereda el color del contenedor */
+}
+
+.logo a:hover h1 {
+    color: #4CAF50;
+    /* Cambia color que prefieras */
+}
+
+.logo h1 {
+    font-size: xx-large;
+}
+
+.listNav {
+    display: flex;
+    gap: 20px;
+    font-family: monospace;
+}
+
+.listNav a {
+    color: white;
+    text-decoration: none;
+}
+
+.listNav a:hover h2 {
+    color: #4CAF50;
+    /* Cambia este valor al color que prefieras */
+}
+
+.logginButton {
+    background-color: #4CAF50;
+    /* Color de fondo */
+    border: none;
+    /* Sin borde */
+    color: white;
+    /* Color del texto */
+    padding: 15px 32px;
+    /* Espaciado interior */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Mostrar en línea */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    margin: 4px 2px;
+    /* Margen exterior */
+    cursor: pointer;
+    /* Cambiar cursor al pasar sobre el botón */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s;
+    /* Transición para el cambio de color */
+}
+
+.logginButton:hover {
+    background-color: #45a049;
+    /* Color de fondo al pasar el cursor */
+}
+
+.descargarCV {
+    background-color: #4CAF50;
+    /* Color de fondo */
+    border: none;
+    /* Sin borde */
+    color: white;
+    /* Color del texto */
+    padding: 15px 32px;
+    /* Espaciado interior */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Mostrar en línea */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    margin: 4px 2px;
+    /* Margen exterior */
+    cursor: pointer;
+    /* Cambiar cursor al pasar sobre el botón */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s;
+    /* Transición para el cambio de color */
+}
+
+.descargarCV:hover {
+    background-color: #45a049;
+    /* Color de fondo al pasar el cursor */
+}
+
+
+/* BANNER */
+.sectionBanner {
+    background-image: url(img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    margin-top: 5px;
+    color: white;
+    justify-content: space-around;
+    border-radius: 8px;
+    font-size: 250%;
+    font-family: monospace;
+}
+
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 h3 {
+    margin-left: -100%;
+    margin-bottom: -30%;
+    color: #45a049;
+}
+
+.container2 {
+    padding: 3%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.textBanner {
+    white-space: nowrap;
+    border-right: 4px solid;
+    overflow: hidden;
+    display: inline-block;
+    width: 0;
+    /* Se ajusta la anchura de acuerdo al texto */
+}
+
+.sectionEstudios {
+    background-image: url(img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: dimgrey;
+    color: white;
+    justify-content: space-around;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-size: 250%;
+    font-family: monospace;
+}
+
+.titleEstudios {
+    color: #45a049;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 8ch;
+    /* Ajusta el ancho según el texto */
+    overflow: hidden;
+    /* Oculta el texto que se desborda */
+    animation: typingEstudios 2s steps(8), blinkEstudios .5s infinite step-end;
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+@keyframes typingEstudios {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 8ch;
+    }
+}
+
+@keyframes blinkEstudios {
+    50% {
+        border-color: transparent;
+    }
+
+}
+
+.contenidoEstudios {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container-estudios {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-estudios {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.carousel-item-estudios h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.carousel-item-estudios h5 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.carousel-item-estudios p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.prev-estudios,
+.next-estudios {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #45a049;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-estudios {
+    left: 10px;
+}
+
+.next-estudios {
+    right: 10px;
+}
+
+
+
+
+/* EXPERIENCIA */
+
+.sectionExperiencia {
+    background-image: url(img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: dimgrey;
+    color: white;
+    justify-content: space-around;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-size: 250%;
+    font-family: monospace;
+}
+
+.titleExperiencia {
+    color: #45a049;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 11ch;
+    /* Ajusta el ancho según el texto */
+    overflow: hidden;
+    /* Oculta el texto que se desborda */
+    animation: typingEstudios 2s steps(11), blinkEstudios .5s infinite step-end;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+@keyframes typingExperiencia {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 11ch;
+        /* Ajusta el ancho final según el texto */
+    }
+}
+
+@keyframes blinkExperiencia {
+    50% {
+        border-color: transparent;
+    }
+
+}
+
+.contenidoExperiencia {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container-experiencia {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-experiencia {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.carousel-item-experiencia h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.carousel-item-experiencia h5 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.carousel-item-experiencia p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.prev-experiencia,
+.next-experiencia {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #45a049;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-experiencia {
+    left: 10px;
+}
+
+.next-experiencia {
+    right: 10px;
+}
+
+
+/* PROYECTOS */
+
+.sectionProyectos {
+    background-image: url(img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: dimgrey;
+    color: white;
+    justify-content: space-around;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-size: 250%;
+    font-family: monospace;
+}
+
+.titleProyectos {
+    color: #45a049;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 9ch;
+    /* Ajusta el ancho según el texto */
+    overflow: hidden;
+    /* Oculta el texto que se desborda */
+    animation: typingEstudios 2s steps(9), blinkEstudios .5s infinite step-end;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+@keyframes typingProyectos {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 9ch;
+        /* Ajusta el ancho final según el texto */
+    }
+}
+
+@keyframes blinkProyectos {
+    50% {
+        border-color: transparent;
+    }
+
+}
+
+.contenidoProyectos {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    padding: 1%;
+    margin: 3%;
+    display: flex;
+    align-items: center;
+    background-color: dimgrey;
+    border-radius: 8px;    
+}
+
