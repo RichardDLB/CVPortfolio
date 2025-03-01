@@ -32,40 +32,66 @@ changeText();
 
 
 
+// carrusel section estudios
+let currentIndexEstudios = 0;
 
-let currentIndexDos = 0;
+function moveCarouselEstudios(direction) {
+    const containerExperiencia = document.querySelector('.carousel-container-estudios');
+    const itemsExperiencia = document.querySelectorAll('.carousel-item-estudios');
+    const totalitemsExperiencia = itemsExperiencia.length;
 
-function moveCarousel1(direction) {
-    const container = document.querySelector('.carousel-container-estudios');
-    const items = document.querySelectorAll('.carousel-item-estudios');
-    const totalItems = items.length;
+    currentIndexEstudios += direction;
 
-    currentIndexDos += direction;
-
-    if (currentIndexDos < 0) {
-        currentIndexDos = totalItems - 1;
-    } else if (currentIndexDos >= totalItems) {
-        currentIndexDos = 0;
+    if (currentIndexEstudios < 0) {
+        currentIndexEstudios = totalitemsExperiencia - 1;
+    } else if (currentIndexEstudios >= totalitemsExperiencia) {
+        currentIndexEstudios = 0;
     }
 
-    container.style.transform = `translateX(-${currentIndexDos * 100}%)`;
+    containerExperiencia.style.transform = `translateX(-${currentIndexEstudios * 100}%)`;
 }
+moveCarouselEstudios(0); 
 
-let currentIndexTres = 0;
 
-function moveCarousel2(direction) {
-    const container = document.querySelector('.carousel-container-experiencia');
-    const items = document.querySelectorAll('.carousel-item-experiencia');
-    const totalItems = items.length;
 
-    currentIndexTres += direction;
+// carrusel section experiencia
+let currentIndexExperiencia = 0;
 
-    if (currentIndexTres < 0) {
-        currentIndexTres = totalItems - 1;
-    } else if (currentIndexTres >= totalItems) {
-        currentIndexTres = 0;
+function moveCarouselExperiencia(direction) {
+    const containerExperiencia = document.querySelector('.carousel-container-experiencia');
+    const itemsExperiencia = document.querySelectorAll('.carousel-item-experiencia');
+    const totalitemsExperiencia = itemsExperiencia.length;
+
+    currentIndexExperiencia += direction;
+
+    if (currentIndexExperiencia < 0) {
+        currentIndexExperiencia = totalitemsExperiencia - 1;
+    } else if (currentIndexExperiencia >= totalitemsExperiencia) {
+        currentIndexExperiencia = 0;
     }
 
-    container.style.transform = `translateX(-${currentIndexTres * 100}%)`;
+    containerExperiencia.style.transform = `translateX(-${currentIndexExperiencia * 100}%)`;
 }
+moveCarouselExperiencia(0); 
+
+
+// carrusel section proyectos
+let currentIndexProyectos = 0;
+
+function moveCarouselProyectos(direction) {
+    const containerProyectos = document.querySelector('.carousel-container-proyectos');
+    const itemsProyectos = document.querySelectorAll('.carousel-item-proyectos');
+    const totalitemsProyectos = itemsProyectos.length;
+
+    currentIndexProyectos += direction;
+
+    if (currentIndexProyectos < 0) {
+        currentIndexProyectos = totalitemsProyectos - 1;
+    } else if (currentIndexProyectos >= totalitemsProyectos) {
+        currentIndexProyectos = 0;
+    }
+
+    containerProyectos.style.transform = `translateX(-${currentIndexProyectos * 100}%)`;
+}
+moveCarouselProyectos(0); 
 

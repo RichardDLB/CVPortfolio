@@ -25,21 +25,24 @@
                     </a>
                 </div>
                 <div>
-                    <div class="listNav">
+                    <div class="listNav btnVolverArriba">
                         <div><a href="#">
                                 <h2>LinkedIn</h2>
                             </a></div>
                         <div><a href="#">
                                 <h2>GitHub</h2>
                             </a></div>
-                        <div><a href="#">
+                        <div><a href="#sectionEstudios">
                                 <h2>Estudios</h2>
                             </a></div>
-                        <div><a href="#">
+                        <div><a href="#sectionExperiencia">
                                 <h2>Experiencia</h2>
                             </a></div>
-                        <div><a href="#">
+                        <div><a href="#sectionProyectos">
                                 <h2>Proyectos</h2>
+                            </a></div>
+                            <div><a href="#sectionContacto">
+                                <h2>Contacto</h2>
                             </a></div>
                         <button class="descargarCV">Descargar CV</button>
                     </div>
@@ -49,7 +52,7 @@
         </nav>
     </header>
     <main>
-        <section class="sectionBanner">
+        <section class="sectionBanner" id="sectionBanner">
             <div class="container1">
                 <div>
                     <h3>
@@ -67,8 +70,9 @@
                     <p>
                     <h6>
                         A lo largo de mi formación en el desarrollo de software, he adquirido conocimientos en diversas
-                        tecnologías como <span style="color: #45a049;">HTML5, CSS3, TypeScript, Angular, Java,
-                            SpringBoot</span>, y más. Actualmente, estudio la Tecnicatura Superior en Desarrollo de
+                        tecnologías como <span style="color: #45a049;">HTML5, CSS3, JavaScript, Angular, Java,
+                            SpringBoot, Hibernate</span>, y más. Actualmente, estudio la Tecnicatura Superior en
+                        Desarrollo de
                         Software en el IFTS. Mi objetivo es mejorar mis habilidades en un entorno que fomente la
                         creatividad y el crecimiento personal y profesional.
                     </h6>
@@ -77,7 +81,7 @@
             </div>
         </section>
 
-        <section class="sectionEstudios">
+        <section class="sectionEstudios" id="sectionEstudios">
             <h2 class="titleEstudios">Estudios</h2>
             <div class="contenidoEstudios">
                 <div class="carousel-container-estudios">
@@ -103,19 +107,19 @@
                         <h3>Desarrollador Web Full Stack</h3>
                         <p>Cámara de la Industria Argentina del Software (CESSI)</p>
                         <p>Finalizado Enero 2022 - abril 2023</p>
-                        <h5>Programas diseñado para proporcionar la comprensión de los lenguajes de programación y las
+                        <h5>Programa diseñado para proporcionar la comprensión de los lenguajes de programación y las
                             herramientas necesarias para construir aplicaciones web completas, desde la interfaz de
                             usuario hasta la base de datos. Tecnologías usadas : HTML5, CSS3, BootStrap, JavaScript,
                             Java, SpringBoot, Git, Render, Firebase.</h5>
                     </div>
                     <!-- Añade más items según sea necesario -->
                 </div>
-                <button class="prev-estudios" onclick="moveCarousel1(-1)">&#10094;</button>
-                <button class="next-estudios" onclick="moveCarousel1(1)">&#10095;</button>
+                <button class="prev-estudios" onclick="moveCarouselEstudios(-1)">&#10094;</button>
+                <button class="next-estudios" onclick="moveCarouselEstudios(1)">&#10095;</button>
             </div>
         </section>
 
-        <section class="sectionExperiencia">
+        <section class="sectionExperiencia" id="sectionExperiencia">
             <h2 class="titleExperiencia">Experiencia</h2>
             <div class="contenidoExperiencia">
                 <div class="carousel-container-experiencia">
@@ -123,35 +127,99 @@
                         <h3>Landing Page</h3>
                         <p>Cafetería de especialidad Tintico</p>
                         <p><a href="https://tinticocafeteria.github.io/Tintico/" target="_blank"
-                                style="color: inherit; text-decoration: none;  "> Web Tintico Cafeteria</a></p>
-                        <h5>Para el desarrollo de la página se utilizaron tecnologías como HTML5, CSS3, Bootstrap,
-                            BootStrapMade y JavaScript, y el código fuente se gestiona con Git. La página se despliega
-                            utilizando el servidor de GitHub.</h5>
+                                style="color: #4CAF50; text-decoration: none;  "> Web Tintico Cafeteria</a></p>
+                        <h5>El proyecto web de Tintico Cafetería fue desarrollado con el objetivo de crear una presencia
+                            digital atractiva y funcional. Utilizamos tecnologías modernas como HTML5 para la estructura
+                            del contenido, CSS3 y Bootstrap para un diseño responsive y adaptable a cualquier
+                            dispositivo, y JavaScript para agregar interactividad y dinamismo. Además, se emplearon
+                            plantillas de BootstrapMade para optimizar el proceso de diseño y garantizar un resultado
+                            profesional.
+
+                            El código fuente se gestionó mediante Git, lo que permitió un control de versiones eficiente
+                            y colaborativo. Finalmente, la página se despliega utilizando el servicio de hosting de
+                            GitHub
+                        </h5>
+                    </div>
+                    <div class="carousel-item-experiencia">
+                        <h3>Landing Page</h3>
+                        <p>El Ingeniero C&L</p>
+                        <p><a href="https://elingenierocyl.github.io/ferreteria/" target="_blank"
+                                style="color: #4CAF50; text-decoration: none;  "> Web El Ingeniero C&L</a></p>
+                        <h5>Langding Page El Ingeniero C&L para el desarrollo se utilizaron
+                            tecnologías modernas y eficientes para garantizar un diseño atractivo, funcional y
+                            responsive. Utilizamos HTML5 para la estructura del contenido, CSS3 y Bootstrap para el
+                            diseño y la adaptabilidad en diferentes dispositivos, y JavaScript para agregar
+                            interactividad y dinamismo. Además, se emplearon plantillas de BootstrapMade para optimizar
+                            el proceso de diseño y asegurar un resultado profesional.
+
+                            El código fuente se gestionó mediante Git. Finalmente, la página se despliega utilizando el
+                            servicio de hosting de GitHub, asegurando un acceso rápido y confiable para los usuarios..
+                        </h5>
                     </div>
                 </div>
-                <button class="prev-experiencia" onclick="moveCarousel2(-1)">&#10094;</button>
-                <button class="next-experiencia" onclick="moveCarousel2(1)">&#10095;</button>
+                <button class="prev-experiencia" onclick="moveCarouselExperiencia(-1)">&#10094;</button>
+                <button class="next-experiencia" onclick="moveCarouselExperiencia(1)">&#10095;</button>
             </div>
         </section>
 
-        <section class="sectionProyectos">
+        <section class="sectionProyectos" id="sectionProyectos">
             <h2 class="titleProyectos">Proyectos</h2>
             <div class="contenidoProyectos">
-                <div class="contImgProyectos">
-                    <img src="img/Captura de pantalla 2024-03-13 191622.png" alt="">
+                <div class="carousel-container-proyectos">
+                    <div class="carousel-item-proyectos">
+                        <h3>Portfolio</h3>
+                        <p>Proyecto final ArgentinaPrograma</p>
+                        <p><a href="https://tinticocafeteria.github.io/Tintico/" target="_blank"
+                                style="color: #4CAF50; text-decoration: none;  "> Web Tintico Cafeteria</a></p>
+                        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora repudiandae
+                            provident placeat iure velit modi id nam magnam sint quae ut libero necessitatibus quaerat
+                            ducimus, in exercitationem recusandae! Mollitia
+                        </h5>
+                    </div>
+                    <div class="carousel-item-proyectos">
+                        <h3>Portfolio</h3>
+                        <p>Proyecto final ArgentinaPrograma</p>
+                        <p><a href="https://tinticocafeteria.github.io/Tintico/" target="_blank"
+                                style="color: #4CAF50; text-decoration: none;  "> Web Tintico Cafeteria</a></p>
+                        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora repudiandae
+                            provident placeat iure velit modi id nam magnam sint quae ut libero necessitatibus quaerat
+                            ducimus, in exercitationem recusandae! Mollitia
+                        </h5>
+                    </div>
                 </div>
-                <div class="">
-                    <h3>Portfolio</h3>
-                    <p>Proyecto final ArgentinaPrograma</p>
-                    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora repudiandae
-                        provident placeat iure velit modi id nam magnam sint quae ut libero necessitatibus quaerat
-                        ducimus, in exercitationem recusandae! Mollitia!</h5>
-                </div>
+                <button class="prev-proyectos" onclick="moveCarouselProyectos(-1)">&#10094;</button>
+                <button class="next-proyectos" onclick="moveCarouselProyectos(1)">&#10095;</button>
             </div>
         </section>
 
+        <section class="sectionContacto" id="sectionContacto">
+            <h2 class="titleContacto">Contacto</h2>
+            <div class="contenidoContacto">
+                <form action="" class="formContacto">
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" class="item-form">
+                    </div>
+                    <div>
+                        <label for="email">Correo:</label>
+                        <input type="email" class="item-form">
+                    </div>
+                    <div>
+                        <label for="message">message:</label>
+                        <textarea type="text" class="item-form"></textarea>
+                    </div>
+                    <button type="submit" class="button-send">ENVIAR</button>
+                    <button type="reset" class="button-send">BORRAR</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div>
+            <h3>Todos los derechos reservados. Designed by: Richard Lopez</h3>
+        </div>
+    </footer>
+    
     <script src="index.js"></script>
 </body>
 
