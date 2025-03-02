@@ -1,0 +1,624 @@
+/* NAVBAR */
+.containerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: dimgrey;
+    font-family: monospace;
+    position: fixed; /* Fija la barra de navegación */
+    top: 0; /* La coloca en la parte superior */
+    left: 0; /* La coloca en la parte izquierda */
+    width: 98.8%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    margin-left: 8px;
+}
+
+.logo {
+    color: white;
+}
+
+.logo a {
+    text-decoration: none;
+    /* Elimina la subrayado del enlace */
+    color: inherit;
+    /* Hereda el color del contenedor */
+}
+
+.logo a:hover h1 {
+    color: #4CAF50;
+    /* Cambia color que prefieras */
+}
+
+.logo h1 {
+    font-size: xx-large;
+}
+
+.listNav {
+    display: flex;
+    gap: 20px;
+    font-family: monospace;
+}
+
+.listNav a {
+    color: white;
+    text-decoration: none;
+}
+
+.listNav a:hover h2 {
+    color: #4CAF50;
+    /* Cambia este valor al color que prefieras */
+}
+
+.logginButton {
+    background-color: #4CAF50;
+    /* Color de fondo */
+    border: none;
+    /* Sin borde */
+    color: white;
+    /* Color del texto */
+    padding: 15px 32px;
+    /* Espaciado interior */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Mostrar en línea */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    margin: 4px 2px;
+    /* Margen exterior */
+    cursor: pointer;
+    /* Cambiar cursor al pasar sobre el botón */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s;
+    /* Transición para el cambio de color */
+}
+
+.logginButton:hover {
+    background-color: #45a049;
+    /* Color de fondo al pasar el cursor */
+}
+
+.descargarCV {
+    background-color: #4CAF50;
+    /* Color de fondo */
+    border: none;
+    /* Sin borde */
+    color: white;
+    /* Color del texto */
+    padding: 15px 32px;
+    /* Espaciado interior */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Mostrar en línea */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    margin: 4px 2px;
+    /* Margen exterior */
+    cursor: pointer;
+    /* Cambiar cursor al pasar sobre el botón */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s;
+    /* Transición para el cambio de color */
+}
+
+.descargarCV:hover {
+    background-color: #45a049;
+    /* Color de fondo al pasar el cursor */
+}
+
+
+/* BANNER */
+.sectionBanner {
+    background-image: url(/portfolio/src/img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    margin-top: 5px;
+    color: white;
+    justify-content: space-around;
+    border-radius: 8px;
+    font-size: 250%;
+    font-family: monospace;
+}
+
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 h3 {
+    margin-left: -100%;
+    margin-bottom: -30%;
+    color: #45a049;
+}
+
+.container2 {
+    padding: 3%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.textBanner {
+    white-space: nowrap;
+    border-right: 4px solid;
+    overflow: hidden;
+    display: inline-block;
+    width: 0;
+    /* Se ajusta la anchura de acuerdo al texto */
+}
+
+/* ESTUDIOS */
+.sectionEstudios {
+    background-image: url(/portfolio/src/img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: dimgrey;
+    color: white;
+    justify-content: space-around;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-size: 250%;
+    font-family: monospace;
+}
+
+.titleEstudios {
+    color: #45a049;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 9ch;
+    /* Ajustado a 9 caracteres */
+    overflow: hidden;
+    animation: typingEstudios 6s steps(8) infinite, blinkEstudios .5s infinite step-end;
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+@keyframes typingEstudios {
+    0% {
+        width: 0;
+        /* Comienza con el texto oculto */
+    }
+
+    50% {
+        width: 8ch;
+        /* Muestra el texto completo */
+    }
+
+    80% {
+        width: 8ch;
+        /* Mantiene el texto completo (pausa) */
+    }
+
+    100% {
+        width: 0;
+        /* Oculta el texto nuevamente */
+    }
+}
+
+@keyframes blinkEstudios {
+    50% {
+        border-color: transparent;
+        /* Parpadeo del cursor */
+    }
+}
+
+.contenidoEstudios {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container-estudios {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-estudios {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.carousel-item-estudios h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.carousel-item-estudios h5 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    text-align: justify;
+}
+
+.carousel-item-estudios p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.prev-estudios,
+.next-estudios {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #45a049;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-estudios {
+    left: 10px;
+}
+
+.next-estudios {
+    right: 10px;
+}
+
+/* EXPERIENCIA */
+.sectionExperiencia {
+    background-image: url(/portfolio/src/img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: dimgrey;
+    color: white;
+    justify-content: space-around;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-size: 250%;
+    font-family: monospace;
+}
+
+.titleExperiencia {
+    color: #45a049;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 11ch;
+    /* Ajusta el ancho según el texto */
+    overflow: hidden;
+    /* Oculta el texto que se desborda */
+    animation: typingExperiencia 6s steps(11) infinite, blinkExperiencia .5s infinite step-end;
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+@keyframes typingExperiencia {
+    0% {
+        width: 0;
+        /* Comienza con el texto oculto */
+    }
+
+    50% {
+        width: 11ch;
+        /* Muestra el texto completo */
+    }
+
+    80% {
+        width: 11ch;
+        /* Mantiene el texto completo (pausa) */
+    }
+
+    100% {
+        width: 0;
+        /* Oculta el texto nuevamente */
+    }
+}
+
+@keyframes blinkExperiencia {
+    50% {
+        border-color: transparent;
+    }
+
+}
+
+.contenidoExperiencia {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container-experiencia {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-experiencia {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.carousel-item-experiencia h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.carousel-item-experiencia h5 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    text-align: justify;
+}
+
+.carousel-item-experiencia p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.prev-experiencia,
+.next-experiencia {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #45a049;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-experiencia {
+    left: 10px;
+}
+
+.next-experiencia {
+    right: 10px;
+}
+
+/* PROYECTOS */
+.sectionProyectos {
+    background-image: url(/portfolio/src/img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: dimgrey;
+    color: white;
+    justify-content: space-around;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-size: 250%;
+    font-family: monospace;
+}
+
+.titleProyectos {
+    color: #45a049;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 9ch;
+    /* Ajusta el ancho según el texto */
+    overflow: hidden;
+    /* Oculta el texto que se desborda */
+    animation: typingProyectos 6s steps(9) infinite, blinkProyectos .5s infinite step-end;
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+@keyframes typingProyectos {
+    0% {
+        width: 0;
+        /* Comienza con el texto oculto */
+    }
+
+    50% {
+        width: 9ch;
+        /* Muestra el texto completo */
+    }
+
+    80% {
+        width: 9ch;
+        /* Mantiene el texto completo (pausa) */
+    }
+
+    100% {
+        width: 0;
+        /* Oculta el texto nuevamente */
+    }
+}
+
+@keyframes blinkProyectos {
+    50% {
+        border-color: transparent;
+    }
+
+}
+
+.contenidoProyectos {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container-proyectos {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-proyectos {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.carousel-item-proyectos h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.carousel-item-proyectos h5 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    text-align: justify;
+}
+
+.carousel-item-proyectos p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.prev-proyectos,
+.next-proyectos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #45a049;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-proyectos {
+    left: 10px;
+}
+
+.next-proyectos {
+    right: 10px;
+}
+
+/*CONTACTO*/
+.sectionContacto {
+    background-image: url(/portfolio/src/img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: dimgrey;
+    color: white;
+    justify-content: space-around;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-size: 250%;
+    font-family: monospace;
+}
+
+.titleContacto {
+    color: #45a049;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 8ch;
+    /* Ajusta el ancho según el texto */
+    overflow: hidden;
+    /* Oculta el texto que se desborda */
+    animation: typingContacto 6s steps(8) infinite, blinkContacto .5s infinite step-end;
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+@keyframes typingContacto {
+    0% {
+        width: 0;
+        /* Comienza con el texto oculto */
+    }
+
+    50% {
+        width: 8ch;
+        /* Muestra el texto completo */
+    }
+
+    80% {
+        width: 8ch;
+        /* Mantiene el texto completo (pausa) */
+    }
+
+    100% {
+        width: 0;
+        /* Oculta el texto nuevamente */
+    }
+}
+
+@keyframes blinkContacto {
+    50% {
+        border-color: transparent;
+    }
+
+}
+
+.contenidoContacto {
+    position: relative;
+    overflow: hidden;
+}
+
+.item-contacto {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.formContacto {
+    padding: 50px;
+}
+
+.item-form {
+    width: 100%;
+    /* Ocupa el 50% del ancho de su contenedor */
+    padding: 10px;
+    /* Añade un poco de espacio interno */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho total */
+}
+
+.button-send {
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Cambia el color del botón al pasar el cursor */
+.button-send:hover {
+    background-color: #45a049; /* Color verde */
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-family: monospace;  
+    color: white;  
+    margin-top: 5px;
+    /* Bordes redondeados */
+}
+
